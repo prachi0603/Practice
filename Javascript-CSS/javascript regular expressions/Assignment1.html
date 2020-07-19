@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function myfunction(){
+	var flag=0;
+	var number=document.validate1.num.value;
+	var password=document.validate1.pass.value;
+	if(number.length==0){
+			alert("Please enter a number");
+			document.validate1.num.focus();
+		}
+	else
+		flag=flag+1;
+	if(isNaN(number)){
+		alert("Please enter only numeric values");
+		document.validate1.num.focus();
+	}
+	else
+		flag=flag+1;
+	if(password.length<5){
+		alert("Please enter a password with alteast 4 characters.");
+		document.validate1.pass.focus();
+		}
+	else
+		flag=flag+1;
+	if(flag==3)
+		return true;
+	else
+		return false;
+}
+</script>
+</head>
+<body>
+<form name="validate1" method=post onsubmit="return myfunction();">
+Number: <input type="text" name="num"><br>
+Password: <input type="password" name="pass"><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
