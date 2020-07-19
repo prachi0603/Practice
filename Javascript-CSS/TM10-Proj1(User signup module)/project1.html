@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="resources\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="resources\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="C:\Users\Aashish\Desktop\Assignment\css Javascript\TM10-Proj1\Project1css.css">
+<script type="text/javascript" src="C:\Users\Aashish\Desktop\Assignment\css Javascript\TM10-Proj1\Proj1js.js"></script>
+</head>
+<body>
+<div id="container">
+<h1>Click on register</h1>
+<div><b>You need to fill the form in 3 minutes!</b></div><br>
+<button onclick="myfunction()" id="button1" style="width:auto;">Register</button>
+<p id="dateandtime"></p>
+<form name="form1" id="myform" onsubmit="return submitform();">
+<b>First Name:</b><input type="text" id="fname1" name="fname" placeholder="enter your first name" required><br><br>
+<b>Last Name:</b><input type="text" id="lname1" name="lname" placeholder="enter your last name" required><br><br>
+<b>Password:</b><input type="password" id="pass1" placeholder="enter your password" required><br><br>
+<b>Confirm Password:</b><input type="password" id="pass2" placeholder="re-enter your password" required><br><br>
+<p><b>Select your gender:</b>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label><br>
+<p><b>Please enter the your 10 digit number in either <strong>XXX-XXX-XXXX</strong> or <strong>XXX.XXX.XXXX</strong> or <strong>XXX XXX XXXX</strong> format.</b></p>
+<b>Mobile Number:</b><input type="text" name="num" id="num" placeholder="enter your number" required><br><br>
+<p><b>Please enter the your DOB(Date of Birth) in <strong>DD-MM-YYYY</strong> format.</b></p>
+<b>DOB:</b><input type="text" placeholder="enter your date-of-birth" name="dob" id="dob1" required><br><br>
+<b>Email:</b><input type="text" placeholder="enter your email-id" name="emailid" id="email" required><br><br>
+<input type="submit" value="Submit" class="button2">
+</form></div>
+</body>
+</html>
