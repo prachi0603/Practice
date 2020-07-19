@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function myfunction(){
+	var password=document.validate2.pass.value;
+	var val=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+	if(password.match(val))
+		return true;
+	else
+		{
+		alert("Please enter a valid password with matching given criteria");
+		return false;
+		}
+}
+</script>
+</head>
+<body>
+<form name="validate2" onsubmit="return myfunction();">
+<p>Please enter the password with 6 to 20 characters in it and containing atleast one uppercase, one lowercase and one numeric value.</p>
+Number: <input type="password" name="pass" placeholder="enter your password"><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
