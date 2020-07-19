@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+Number 1:<input type="text" id="text1" placeholder="enter 1st number"><br>
+Number 2:<input type="text" id="text2" placeholder="enter 2nd number"><br>
+<input type="button" id="button1" onclick="calculate()" value="Calculate"><br>
+<script type="text/javascript">
+function calculate(){
+	var x1=document.getElementById("text1").value;
+	var x2=document.getElementById("text2").value;
+	var val=parseInt(x1)+parseInt(x2);
+	window.alert(val);
+}
+</script>
+</body>
+</html>
