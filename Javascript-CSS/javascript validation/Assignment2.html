@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function myfunction(){
+	var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+	var number=document.validate2.num.value;
+	  if(number.match(phoneno))
+	        {
+	      return true;
+	        }
+	      else
+	        {
+	        alert("Please enter a valid 10 digit number in above format");
+	        return false;
+	        }
+}
+</script>
+</head>
+<body>
+<form name="validate2" onsubmit="return myfunction();">
+<p>Please enter the your 10 digit number in either <b>XXX-XXX-XXXX</b> or <b>XXX.XXX.XXXX</b> or <b>XXX XXX XXXX</b> format.</p>
+Number: <input type="text" name="num" placeholder="enter your number"><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
