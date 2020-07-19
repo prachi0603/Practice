@@ -1,0 +1,90 @@
+@charset "ISO-8859-1";
+body{
+background-color:purple;
+color:black;
+padding:50px;
+}
+#dateandtime{
+	text-align:right;
+	font-weight:bold;
+}
+#myform{
+	display: none;
+	background-color:grey;
+	padding:50px;
+	border:1px solid #626262;
+	width:700px;
+}
+#fname1{
+	background-color:#408080;
+	
+}
+#lname1{
+	background-color:#408080;
+}
+#pass1{
+	background-color:#408080;
+}
+#pass2{
+	background-color:#408080;
+}
+#num{
+	background-color:#408080;
+}
+#dob1{
+	background-color:#408080;
+}
+#email{
+	background-color:#408080;
+}
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #366d6d;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 10px #574d4d;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #574d4d;
+  background-color: #555555;
+  color: white;
+  
+}
+input[type=password], password {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #366d6d;
+}
+ 
+input[type=password]:focus, password:focus {
+  box-shadow: 0 0 10px #574d4d;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #574d4d;
+  background-color: #555555;
+  color: white;
+}
+#button1:hover{
+	box-shadow: 0 0 10px #292323;
+	border: 1px solid #574d4d;
+	background-color: #555555;
+  	color: white;
+}
+.button2:hover{
+	box-shadow: 0 0 10px #292323;
+	border: 1px solid #574d4d;
+	background-color: #555555;
+  	color: white;
+}
